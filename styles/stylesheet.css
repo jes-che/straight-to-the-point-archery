@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10rem 1fr 10rem;
+}
+header {
+    grid-column: 1 / end; 
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.header-logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.header-link {
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+div.header-logo {
+    background-color: #03a3df;
+    padding: 5%;
+    min-width: 322px;
+}
+div.header-link {
+    background-color: #03a3df;
+    display: grid; 
+}
+div.header-link nav {
+    background-color: #03a3df;
+    font-family: Arial, sans-serif;
+}
+div.header-link nav ul {
+    justify-content: space-evenly;
+    display: flex; 
+    list-style: none;
+    margin: 0;
+    padding-top: 7.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+a.header-link {
+    color: white;
+    text-decoration: none;
+}
+section.home-about {
+    grid-column: 1 /4;
+    grid-row: 2;
+    padding-left: 7.5%;
+}
+section.home-about h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+section.home-about p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+aside.contact-info {
+    grid-column: 4 / end;
+    grid-row: 2;
+    text-align: center;
+    padding-top: 10%;
+}
+aside.contact-info h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+aside.contact-info p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+div.social-media ul {
+    list-style: none;
+}
