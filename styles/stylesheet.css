@@ -17,6 +17,7 @@ header {
     grid-row-end: 1;
     background-color: #03a3df;
     padding: 5%;
+    padding-left: 15%;
     min-width: 322px;
 }
 .header-link {
@@ -47,10 +48,14 @@ div.header-link nav ul {
     padding-top: 10%;
     font-size: 1.5rem;
     font-weight: bold;
+    padding-left: 0;
 }
 a.header-link {
     color: white;
     text-decoration: none;
+}
+a.header-link:hover {
+    opacity: 0.5;
 }
 section.home-about {
     grid-column: 1 /4;
@@ -85,7 +90,7 @@ aside.home-info p {
 .home-about {
     padding-bottom: 10%;
 }
-.contact-info {
+#contact-info {
     padding-bottom: 1rem;
 }
 footer {
@@ -97,15 +102,21 @@ footer {
     padding: 5%;
     font-family: Arial, Helvetica, sans-serif;
 }
+div.policy p {
+    font-size: 12px;
+}
 div.social-media ul {
     list-style: none;
     display: flex;
     padding-left: 0;
     padding-bottom: 3rem;
     justify-content: space-between; 
-    width: 33%;
+    width: 50%;
 }
 a.footer-link {
     color: white; 
     text-decoration: none;
+}
+a.footer-link:hover {
+    opacity: 0.5;
 }
