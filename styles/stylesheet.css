@@ -2,7 +2,7 @@ body {
     margin: 0;
     display: grid; 
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 10rem 1fr 10rem;
+    grid-template-rows: 10rem 1fr 30rem;
 }
 header {
     grid-column: 1 / end; 
@@ -15,22 +15,26 @@ header {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    background-color: #03a3df;
+    padding: 5%;
+    min-width: 322px;
 }
 .header-link {
     grid-column-start: 2;
     grid-column-end: end;
     grid-row-start: 1;
     grid-row-end: 1;
+    background-color: #03a3df;
 }
-div.header-logo {
+/* div.header-logo {
     background-color: #03a3df;
     padding: 5%;
     min-width: 322px;
-}
-div.header-link {
+} */
+/* div.header-link {
     background-color: #03a3df;
-    display: grid; 
-}
+    /* display: grid;  
+} */ 
 div.header-link nav {
     background-color: #03a3df;
     font-family: Arial, sans-serif;
@@ -40,7 +44,7 @@ div.header-link nav ul {
     display: flex; 
     list-style: none;
     margin: 0;
-    padding-top: 7.5rem;
+    padding-top: 10%;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -52,6 +56,7 @@ section.home-about {
     grid-column: 1 /4;
     grid-row: 2;
     padding-left: 7.5%;
+    padding-top: 5%;
 }
 section.home-about h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -62,21 +67,45 @@ section.home-about p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
 }
-aside.contact-info {
+aside.home-info {
     grid-column: 4 / end;
     grid-row: 2;
     text-align: center;
     padding-top: 10%;
 }
-aside.contact-info h2 {
+aside.home-info h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 24px;
 }
-aside.contact-info p {
+aside.home-info p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
 }
+.home-about {
+    padding-bottom: 10%;
+}
+.contact-info {
+    padding-bottom: 1rem;
+}
+footer {
+    grid-column: 1 /end;
+    grid-row: 3;
+    background-image: url("../images/footerImage.jpg");
+    color: white;
+    box-sizing: border-box;
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
 div.social-media ul {
     list-style: none;
+    display: flex;
+    padding-left: 0;
+    padding-bottom: 3rem;
+    justify-content: space-between; 
+    width: 33%;
+}
+a.footer-link {
+    color: white; 
+    text-decoration: none;
 }
