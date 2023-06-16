@@ -62,6 +62,7 @@ section.home-about {
     grid-row: 2;
     padding-left: 7.5%;
     padding-top: 5%;
+    color: #444444;
 }
 section.home-about h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -71,12 +72,14 @@ section.home-about h1 {
 section.home-about p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
+    line-height: 1.5rem;
 }
 aside.home-info {
     grid-column: 4 / end;
     grid-row: 2;
     text-align: center;
     padding-top: 10%;
+    color: #444444;
 }
 aside.home-info h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -102,6 +105,7 @@ section.founder-story {
     grid-template-rows: 100px 300px 200px;
     row-gap: 10px;
     padding-bottom: 10%;
+    color: #444444;
 }
 section.founder-story h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -129,8 +133,11 @@ section.service {
     grid-row: 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 100px 1fr 100px 1fr;
+    grid-template-rows: 100px 75px 1fr 75px 200px;
+    row-gap: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+    padding-bottom: 50px;
 }
 section.service h1 {
     grid-column: 2;
@@ -145,17 +152,29 @@ section.class h2 {
     font-weight: bold;
     font-size: 24px;
     text-align: center;
+    align-self: end;
 }
 section.class div {
     display: flex;
     grid-column: 1 / end; 
     grid-row: 3;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+article.class {
+    font-size: 17px;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px dotted #444444;
+    line-height: 1.5rem;
 }
 article.class h3 {
     font-weight: bold;
     font-size: 17px;
     text-align: center;
+}
+article.class ul {
+    padding-left: 10px;
 }
 section.private-lesson h2 {
     grid-column: 2;
@@ -163,11 +182,28 @@ section.private-lesson h2 {
     font-weight: bold;
     font-size: 24px;
     text-align: center;
+    align-self: end;
 }
 section.private-lesson div {
     display: flex;
     grid-column: 1 / end; 
     grid-row: 5;
+}
+article.private-lesson {
+    font-size: 17px;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px dotted #444444;
+    line-height: 1.5rem;
+}
+article.private-lesson h3 {
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+article.private-lesson ul {
+    padding-left: 10px;
 }
 /* Footer here */
 footer {
