@@ -3,64 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <title>Our Instructors</title>
+    <script src="https://kit.fontawesome.com/8ee00d96bc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 </head>
 <body>
     <header>
-        <div><img src="images/archeryAcademy-logo-white.png" alt="Straight to the Point Archery logo"></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="story.html">Story</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="instructor.html">Instructors</a></li>
-            </ul>
-        </nav>
+        <div class="header-logo"><img src="images/archeryAcademy-logo-white.png" alt="Straight to the Point Archery logo"></div>
+        <div class="header-link">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="header-link">Home</a></li>
+                    <li><a href="story.html" class="header-link">Story</a></li>
+                    <li><a href="service.html" class="header-link">Services</a></li>
+                    <li><a href="instructor.html" class="header-link">Instructors</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
+    <section class="instructor">
         <h1>OUR INSTRUCTORS</h1>
     </section>
-    
-    <div>
-        <a href="#amy-smith"><img src="images/instructor-bio-image2.png" alt="Photo of Amy Smith"></a>
-        <a href="#derek-jenkins"><img src="images/instructor-bio-image3.png" alt="Photo of Derek Jenkins"></a>
-        <a href="#nathan-lee"><img src="images/instructor-bio-image1.png" alt="Photo of Nathan Lee"></a>
-    </div>
 
-    <section id="amy-smith">
-        <img src="images/instructor-bio-image2.png" alt="Photo of Amy Smith">
+    <section class="instructor">
+        <div>
+            <article class="instructor-profile">
+                <div>
+                    <img src="images/instructor-bio-image2.png" alt="Photo of Amy Smith" width="200" height="200">
+                </div>
+                <h2>Amy Smith</h2>
+                <p>Amy truly has a passion for archery. She comes from a long line of hunters, fisherman, and trappers of Canada. Amy  places a strong emphasis on safety and is enthusiastic about teaching. Amy also loves fitness, and  has been a YMCA group exercise and personal trainer for over 18 years.</p>
+            </article>
+            <article class="instructor-profile">
+                <div>
+                    <img src="images/instructor-bio-image3.png" alt="Photo of Derek Jenkins" width="200" height="200">
+                </div>
+                <h2>Derek Jenkins</h2>
+                <p>Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping. His skillful mastery of bushcraft and wilderness survival knowledge helps define his character. He enjoys handcrafting his own long bows, flint knapped primitive arrows and making custom leather products.</p>
+            </article>
+            <article class="instructor-profile">
+                <div>
+                    <img src="images/instructor-bio-image1.png" alt="Photo of Nathan Lee" width="200" height="200">
+                </div>
+                <h2>Nathan Lee</h2>
+                <p>Nathan is an USA Archery Certified Level 3 NTS - Coach and has been teaching archery since 2009. He has been interested in archery since he nocked his first arrow while a Boy Scout at Scout camp. Nathan has many years of experience teaching people of all ages, experience gained as a Martial Arts Instructor and Studio Manager.</p>
+            </article>
+        </div>
+    </section>
+    
+    <!-- <div class="instrutor">
+        <a href="#amy-smith"><img src="images/instructor-bio-image2.png" alt="Photo of Amy Smith" width="100" height="100"></a>
+        <a href="#derek-jenkins"><img src="images/instructor-bio-image3.png" alt="Photo of Derek Jenkins" width="100" height="100"></a>
+        <a href="#nathan-lee"><img src="images/instructor-bio-image1.png" alt="Photo of Nathan Lee" width="100" height="100"></a>
+    </div> -->
+<!-- 
+    <section class="instrutor instructor-profile">
+        <img src="images/instructor-bio-image2.png" alt="Photo of Amy Smith" width="200" height="200">
         <h2>Amy Smith</h2>
         <p>Amy truly has a passion for archery. She comes from a long line of hunters, fisherman, and trappers of Canada. Amy  places a strong emphasis on safety and is enthusiastic about teaching. Amy also loves fitness, and  has been a YMCA group exercise and personal trainer for over 18 years.</p>
     </section>
 
-    <section id="derek-jenkins">
-        <img src="images/instructor-bio-image3.png" alt="Photo of Derek Jenkins">
+    <section class="instrutor instructor-profile">
+        <img src="images/instructor-bio-image3.png" alt="Photo of Derek Jenkins" width="200" height="200">
         <h2>Derek Jenkins</h2>
         <p>Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping. His skillful mastery of bushcraft and wilderness survival knowledge helps define his character. He enjoys handcrafting his own long bows, flint knapped primitive arrows and making custom leather products.</p>
     </section>
 
-    <section id="nathan-lee">
-        <img src="images/instructor-bio-image1.png" alt="Photo of Nathan Lee">
+    <section class="instrutor instructor-profile">
+        <img src="images/instructor-bio-image1.png" alt="Photo of Nathan Lee" width="200" height="200">
         <h2>Nathan Lee</h2>
         <p>Nathan is an USA Archery Certified Level 3 NTS - Coach and has been teaching archery since 2009. He has been interested in archery since he nocked his first arrow while a Boy Scout at Scout camp. Nathan has many years of experience teaching people of all ages, experience gained as a Martial Arts Instructor and Studio Manager.</p>
-    </section>
+    </section> -->
 
     <footer>
-        <div><img src="images/archeryAcademy-logo-white.png" alt="Straight to the Point Archery logo"></div>
-        <div>
-            <h3>Contact Info</h3>
-            <p>528 Nock Point Ln<br>Tacoma, WA 98412</p>
-            <p>archery-education@example.com</p>
-            <p>(253)555-1010</p>
-        </div>
-        <div>
+        <div class="footer-logo"><img src="images/archeryAcademy-logo-white.png" alt="Straight to the Point Archery logo"></div>
+        <div class="social-media">
             <h3>Stay Connected</h3>
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="#" class="footer-link"><i class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+                <li><a href="#" class="footer-link"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="#" class="footer-link"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                <li><a href="index.html#contact-info" class="footer-link"><i class="fa-solid fa-bullseye"></i> Contact Us</a></li>
             </ul>
+        </div>
+        <div class="policy">
+            <p>Nondiscriminatory Policy: Straight to the Point Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.</p>
         </div>
         <p>© 2023 All Rights Reserved</p>
     </footer>
